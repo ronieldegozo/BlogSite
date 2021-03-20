@@ -32,10 +32,6 @@ exports.getUserRegister = (req, res) =>
     pageTitle: 'Register'
 })
 
-exports.getUserLogin = (req, res) => 
-    res.render('login', {
-    pageTitle: 'Login'
-})
 
 exports.userDashboard =  (req, res) =>
     res.render('dashboard', {
@@ -96,7 +92,7 @@ exports.userRegister = (req,res)=>{
                           newUser.save()
                               .then(user => {
                                   req.flash('success_msg','You are now Registered and can Log in'); //flash message for success user registation
-                                  res.redirect('/users/login');
+                                  res.redirect('/');
                               })
                               .catch(err => console.log(err));
                       })
@@ -112,7 +108,7 @@ exports.userRegister = (req,res)=>{
 exports.userLogin = (req, res, next) => {
     passport.authenticate('local', {
       successRedirect: '/dashboard',
-      failureRedirect: '/users/login',
+      failureRedirect: '/',
       failureFlash: true,
 
     })(req, res, next);
@@ -121,5 +117,5 @@ exports.userLogin = (req, res, next) => {
 exports.userLogout = (req, res) => {
     req.logout();
     req.flash('success_msg', 'You are logged out');
-    res.redirect('/users/login');
+    res.redirect('/');
   }

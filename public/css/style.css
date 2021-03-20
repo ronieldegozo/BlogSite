@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #33ccff 0%, #c2bcd1 100%);
+    background: #fff;
     height: 100%;
     background-repeat: no-repeat center center fixed;
     background-size: cover;
@@ -16,7 +16,9 @@ body {
     color: green;
 }
 
-/* dashboard welcome */
+/* dashboard NAVBAR welcome */
+
+ 
   @font-face {
     src:url('/font/welcome.ttf');
     font-family: welcome;
@@ -24,28 +26,15 @@ body {
   nav .navbar-brand{
     font-family: welcome;
     font-size: 25px;
+    
   }
 
-
-/*NAV BAR*/
-/*responsive css*/
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.carousel-caption {
-		padding-bottom: 25px;
-	}
-	.carousel-caption h2 {
-		font-size: 50px;
-	}
-}
-@media only screen and (max-width: 767px) {
-	.navbar-collapse {
-		background: rgba(0, 0, 0, 0.5);
-
-	}
-}
-
-
-
-
+  @font-face {
+    src:url('/font/featured.ttf');
+    font-family: about;
+  }
+  nav .collapse{
+    font-family: about;
+    font-size: 25px;
+  }
 

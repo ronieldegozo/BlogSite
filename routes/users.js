@@ -1,14 +1,12 @@
 const express = require('express');
 const router = express.Router();
-
-
 // Load User model
 
 const { forwardAuthenticated } = require('../config/auth');
-const { userRegister, userLogin , userLogout, getUserRegister, getUserLogin, aboutUs, contactUs} = require('../controller/users');
+const { userRegister, userLogin , userLogout, getUserRegister, aboutUs, contactUs} = require('../controller/users');
 
 // Login Page
-router.get('/login', forwardAuthenticated, getUserLogin);
+router.get('/', forwardAuthenticated);
 
 // Register Page
 router.get('/register', forwardAuthenticated, getUserRegister);
@@ -21,7 +19,6 @@ router.post('/login', userLogin);
 
 // Logout
 router.get('/logout', userLogout);
-
 
 //About
 router.get('/about', aboutUs);
