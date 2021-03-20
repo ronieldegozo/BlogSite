@@ -1,9 +1,6 @@
-
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light" >
 
   <div class="container ">
-
     <a class="navbar-brand" href="/"><h2><strong>Roniel Blog Site</strong></h2></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -11,14 +8,20 @@
 
     <div class="collapse navbar-collapse mr-5" id="navbarSupportedContent">
       <ul class="navbar-nav my-3 text-center ">
-        <li class="nav-item active ">
+        <li class="nav-item  ">
+          <a class="nav-link" href="#">Blogs</a>
+        </li>
+        <li class="nav-item  ">
+          <a class="nav-link" href="https://ronieldegozo.netlify.app/">Portpolio</a>
+        </li>
+        <li class="nav-item  ">
           <a class="nav-link" href="#">Contact us</a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link" href="/about/us">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" type="button" data-toggle="modal" data-target="#login" >Login</a>
+          <a class="nav-link " type="button" data-toggle="modal" data-target="#login" >Login</a>
         </li>
       </ul> 
     </div>
@@ -27,22 +30,19 @@
 </nav>
 
 
-
-
 <!-- Modal Login -->
 <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Login User</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle"><strong>Login User</strong></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
 
       <div class="card">
-
         <div class="card-body">
           <form action="/users/login" method="POST">
             <%- include('../partials/messages') %>
@@ -61,7 +61,7 @@
         <div class="card-footer">
           <p class="login-wrapper-footer-text">Don't have an account? <a href="/users/register" class="text-reset">Register here</a></p>
         </div>
-    </div>
+     </div>
 
     </div>
   </div>
