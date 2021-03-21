@@ -22,3 +22,11 @@ background-position:center center;
 background-size:cover;
 z-index:4;
 }
+.wrapper h1{
+  color: rgb(8, 67, 156);
+  font-weight: bolder;
+}
+
+.wrapper p{
+  color:  black;
+}
