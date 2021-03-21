@@ -3,7 +3,7 @@ const PORT = process.env.PORT || 3000;
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const passport = require('passport');
-const {get404} = require('./controller/404');
+const {get404} = require('./api/controller/404');
 
 //flash message
 const flash = require('connect-flash');
@@ -11,10 +11,10 @@ const session = require('express-session');
 
 const app = express();
 //PASSPORT CONFIG
-require('./config/passport')(passport);
+require('./api/config/passport')(passport);
 
 //db config
-const db = require('./config/keys').MongoURI;
+const db = require('./api/config/keys').MongoURI;
 mongoose.connect(db, {useNewUrlParser: true, useUnifiedTopology: true})
     .then(()=>{
         console.log('MongoDb Connected');
@@ -58,8 +58,8 @@ app.use((req,res,next)=>{
 
 //routes
 //users
-app.use('/', require('./routes/index'));
-app.use('/users', require('./routes/users'));
+app.use('/', require('./api/routes/index'));
+app.use('/users', require('./api/routes/users'));
 
 
 
