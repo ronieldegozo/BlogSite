@@ -61,6 +61,8 @@ app.use((req,res,next)=>{
 app.use('/', require('./api/routes/index'));
 app.use('/users', require('./api/routes/users'));
 
+//about us and Contact us
+app.use(require('./api/routes/users'));
 
 
 

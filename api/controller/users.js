@@ -12,13 +12,13 @@ exports.userHome = (req, res) =>
 
 //About us
 exports.aboutUs = (req, res) => 
-    res.render('./aboutcontact/about', {
+    res.render('aboutus', {
     pageTitle: 'About us',
     path: '/about'
 })
 //Contact us
 exports.contactUs = (req, res) => 
-    res.render('./aboutcontact/contact', {
+    res.render('contactus', {
     pageTitle: 'Contact us',
     path: '/contact'
 })
