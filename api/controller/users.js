@@ -16,14 +16,6 @@ exports.aboutUs = (req, res) =>
     pageTitle: 'About us',
     path: '/about'
 })
-//Contact us
-exports.contactUs = (req, res) => 
-    res.render('contactus', {
-    pageTitle: 'Contact us',
-    path: '/contact'
-})
-
-
 
 
 
