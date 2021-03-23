@@ -17,8 +17,6 @@ exports.aboutUs = (req, res) =>
     path: '/about'
 })
 
-
-
 exports.getUserRegister = (req, res) => 
     res.render('register', {
     pageTitle: 'Register'
