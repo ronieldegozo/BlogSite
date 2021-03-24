@@ -21,6 +21,15 @@
                           />
                         </div>
                         <div class="form-wrapper">
+                          <input  type="name"
+                          id="nickname"
+                          name="nickname"
+                          class="form-control"
+                          placeholder="Nickname"
+                          value="<%= typeof name != 'undefined' ? nickname : '' %>"
+                        />
+                      </div>
+                        <div class="form-wrapper">
                             <input   type="email"
                             id="email"
                             name="email"

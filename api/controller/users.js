@@ -31,12 +31,12 @@ exports.userDashboard =  (req, res) =>
 
 
 exports.userRegister = (req,res)=>{
-  const {name ,email, password, password2} = req.body;
+  const {name ,nickname ,email, password, password2} = req.body;
   let errors = [];
   
 
   //check required fileds
-  if(!name || !email || !password, !password2 ){
+  if(!name || !nickname || !email || !password, !password2 ){
       errors.push({ msg: 'Please fill in all fields'});
   }
   
@@ -53,7 +53,7 @@ exports.userRegister = (req,res)=>{
 
   if(errors.length >0){
       res.render('register', {
-          errors, name, email, password, password2, pageTitle: 'Register'
+          errors, name, nickname,email, password, password2, pageTitle: 'Register'
       });
   }else{
       //validation pass
@@ -63,11 +63,12 @@ exports.userRegister = (req,res)=>{
                   //user exist
                   errors.push({ msg: 'Email is already Taken'});
                   res.render('register', {
-                      errors, name, email, password, password2,  pageTitle: 'Register'
+                      errors, name, nickname,email, password, password2,  pageTitle: 'Register'
                   });
               }else{
                   const newUser = new User({
                       name,
+                      nickname,
                       email,
                       password
                   });
