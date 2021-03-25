@@ -6,15 +6,8 @@ const passport = require('passport');
 
 exports.userHome = (req, res) => 
     res.render('welcome', {
-    pageTitle: 'Home Page',
+    pageTitle: 'Home',
     path: '/'
-})
-
-//About us
-exports.aboutUs = (req, res) => 
-    res.render('aboutus', {
-    pageTitle: 'About us',
-    path: '/about'
 })
 
 exports.getUserRegister = (req, res) => 

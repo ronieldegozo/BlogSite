@@ -1,150 +1,179 @@
-<%- include('./includes/head') %>
-<link rel="stylesheet" href="/css/welcome.css">
+<%- include('./includes/head.ejs') %>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-<!-- nav bar -->
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-<%- include('./includes/navbar.ejs') %>
+  <%- include('./includes/navbar') %>
 
-
-<div class="container">
-  <div class="nav-scroller mb-1">
-  <nav class="nav d-flex justify-content-between mt-5">
-    <a class="p-2 link-secondary" href="#">World</a>
-    <a class="p-2 link-secondary" href="#">Philippines</a>
-    <a class="p-2 link-secondary" href="#">Technology</a>
-    <a class="p-2 link-secondary" href="#">Design</a>
-    <a class="p-2 link-secondary" href="#">Culture</a>
-    <a class="p-2 link-secondary" href="#">Business</a>
-    <a class="p-2 link-secondary" href="#">Politics</a>
-    <a class="p-2 link-secondary" href="#">Opinion</a>
-    <a class="p-2 link-secondary" href="#">Science</a>
-    <a class="p-2 link-secondary" href="#">Health</a>
-  </nav>
-  </div>
-</div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Welcome to RougeNiel Blog Site</h1>
+      <h2>Discover a New Blog Site in the Philippines</h2>
+      <img src="assets/img/hero-img.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="300">
+      <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section><!-- End Hero Section -->
 
 
-<div class="p-md-5 mb-5 text-center wrapper">
-  <div >
-    <h1 class="display-4 fst-italic animate__animated animate__fadeInLeftBig">Discover a New Blog Site in the Philippines</h1>
-    <p class="lead my-3 animate__animated animate__fadeInRight">The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.</p>
-    <i class="lead my-3 animate__animated animate__fadeInUpBig ">- Winston Churchill</i>
-  </div>
-</div>
+  <main id="main">
+    <!-- ======= Features Section ======= -->
+    <section id="get-started" class="padd-section text-center">
 
-
-
-
-
-
-<main class="container">
-    <div class="row mb-2">
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-primary">Latest</strong>
-            <h3 class="mb-0">Featured post</h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-          </div>
+      <div class="container" data-aos="fade-up">
+        <div class="section-title text-center">
+          <h2>Blog Content</h2>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-danger">Hot</strong>
-            <h3 class="mb-0">Post title</h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="stretched-link">Continue reading</a>
-          </div>
-          <div class="col-auto d-none d-lg-block">
-            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-      
-          </div>
-        </div>
-      </div>
-      </div>
-      
-      <div class="row">
-      <div class="col-md-8">
 
-      
-        <article class="blog-post">
-          <div class="card">
-            <div class="card-header">
-              <h2 class="blog-post-title">Sample blog post</h2>
-              <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img  src="assets/img/svg/paint-palette.svg" alt="img" class="img-fluid">
+              <h4><a href="#">Design</a></h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
             </div>
-            <div class="card-body">
-              <p>Yeah, she dances to her own beat. Oh, no. You could've been the greatest. 'Cause, baby, <a href="#">you're a firework</a>. Maybe a reason why all the doors are closed. Open up your heart and just let it begin. So très chic, yeah, she's a classic.</p>
-              <p>Bikinis, zucchinis, Martinis, no weenies. I know there will be sacrifice but that's the price. <strong>This is how we do it</strong>. I'm not sticking around to watch you go down. You think you're so rock and roll, but you're really just a joke. I know one spark will shock the world, yeah yeah. Can't replace you with a million rings.</p>
-              <p>Trying to connect the dots, don't know what to tell my boss. Before you met me I was alright but things were kinda heavy. You just gotta ignite the light and let it shine. Glitter all over the room <em>pink flamingos</em> in the pool. </p>  
-            </div>
-  
           </div>
-        </article><!-- /.blog-post -->
-      
 
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="assets/img/svg/vector.svg" alt="img" class="img-fluid">
+              <h4>Retina Ready</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
 
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="assets/img/svg/design-tool.svg" alt="img" class="img-fluid">
+              <h4>easy to use</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
 
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="assets/img/svg/asteroid.svg" alt="img" class="img-fluid">
+              <h4>Free Updates</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
 
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="assets/img/svg/asteroid.svg" alt="img" class="img-fluid">
+              <h4>Free Updates</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
 
-        <nav class="blog-pagination" aria-label="Pagination">
-          <a class="btn btn-outline-primary" href="#">Older</a>
-          <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-        </nav>
-      
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="assets/img/svg/cloud-computing.svg" alt="img" class="img-fluid">
+              <h4>App store support</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="assets/img/svg/pixel.svg" alt="img" class="img-fluid">
+              <h4>Perfect Pixel</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="feature-block">
+              <img src="assets/img/svg/code.svg" alt="img" class="img-fluid">
+              <h4>clean codes</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+          </div>
+
+        </div>
       </div>
-      
-      <div class="col-md-4">
-        <div class="p-4 mb-3 bg-light rounded">
-          <h4 class="fst-italic">About</h4>
-          <p class="mb-0">Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop by? Heavy is the head that <em>wears the crown</em>. Yes, we make angels cry, raining down on earth from up above.</p>
+    </section><!-- End Features Section -->
+
+
+    
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="padd-sectio">
+
+      <div class="container" data-aos="fade-up">
+        <div class="text-center">
+
+          <h2>Latest posts</h2>
+          <p class="separator">Integer cursus bibendum augue ac cursus .</p>
         </div>
-      
-        <div class="p-4">
-          <h4 class="fst-italic">Archives</h4>
-          <ol class="list-unstyled mb-0">
-            <li><a href="#">March 2014</a></li>
-            <li><a href="#">February 2014</a></li>
-            <li><a href="#">January 2014</a></li>
-            <li><a href="#">December 2013</a></li>
-            <li><a href="#">November 2013</a></li>
-            <li><a href="#">October 2013</a></li>
-            <li><a href="#">September 2013</a></li>
-            <li><a href="#">August 2013</a></li>
-            <li><a href="#">July 2013</a></li>
-            <li><a href="#">June 2013</a></li>
-            <li><a href="#">May 2013</a></li>
-            <li><a href="#">April 2013</a></li>
-          </ol>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-md-6 col-lg-4">
+            <div class="block-blog text-left">
+              <a href="#"><img src="assets/img/blog/blog-image-1.jpg" alt="img"></a>
+              <div class="content-blog">
+                <h4><a href="#">whats isthe difference between good and bat typography</a></h4>
+                <span>05, juin 2017</span>
+                <a class="pull-right readmore" href="#">read more</a>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="block-blog text-left">
+              <a href="#"><img src="assets/img/blog/blog-image-2.jpg" class="img-responsive" alt="img"></a>
+              <div class="content-blog">
+                <h4><a href="#">whats isthe difference between good and bat typography</a></h4>
+                <span>05, juin 2017</span>
+                <a class="pull-right readmore" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="block-blog text-left">
+              <a href="#"><img src="assets/img/blog/blog-image-3.jpg" class="img-responsive" alt="img"></a>
+              <div class="content-blog">
+                <h4><a href="#">whats isthe difference between good and bat typography</a></h4>
+                <span>05, juin 2017</span>
+                <a class="pull-right readmore" href="#">read more</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-      
-        <div class="p-4">
-          <h4 class="fst-italic">Elsewhere</h4>
+      </div>
+    </section><!-- End Blog Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <%- include('aboutus')%>
+    <!-- End Team Section -->
+
+    <!-- ======= Contact Section =======  -->
+    <div class="container">
+      <%- include('contactus')%>
+    </div>
+    <!-- End Contact Section -->
+
+  </main><!-- End #main -->
+ 
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   
-          <ol class="list-unstyled" style="font-size: 21px;">
-        
-            <li class="fa fa-github" aria-hidden="true"><a href="https://github.com/ronieldegozo"> GitHub</a></li> <br>
-            <li  class="fa fa-linkedin" aria-hidden="true"><a href="#"> Linkedin</a></li> <br>
-            <li class="fa fa-facebook" aria-hidden="true"><a href="https://www.facebook.com/ronieldegozo04/"> Facebook</a></li> <br>
-            <li class="fa fa-youtube" aria-hidden="true"><a href="https://www.youtube.com/channel/UCSOmpjTnITaChi6TADfx3-Q"> Youtube</a></li> <br>
-            <li class="fa fa-envelope" aria-hidden="true"><a href="mailto: ronieldegozo@gmail.com"> Email</a></li>
-          </ol>
-        </div>
-      </div>
-      
-      </div><!-- /.row -->
-
-
-      <%- include('contactus') %>
-
-</main>
-  <%- include('./includes/footermain') %>
-  <%- include('./includes/footer') %>
+  <%- include('./includes/footermain.ejs') %>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="assets/vendor/modal-video/js/modal-video.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/superfish/superfish.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <%- include('./includes/footer.ejs') %>
