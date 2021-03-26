@@ -61,6 +61,9 @@ app.use((req,res,next)=>{
 app.use('/', require('./api/routes/index'));
 app.use('/users', require('./api/routes/users'));
 
+app.use(require('./api/routes/send'));
+
+
 //error code
 app.use(get404);
 app.listen(PORT, console.log(`Server Started on Port ${PORT}`));

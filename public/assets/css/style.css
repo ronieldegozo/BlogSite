@@ -172,8 +172,15 @@ span {
   text-decoration: none;
 }
 
+
+@font-face {
+  src:url('/font/welcome.ttf');
+  font-family: nav;
+}
+
 #header #logo h1 a span {
-  color: #71c55d;
+  color: #246ad4;
+  font-family: nav;
 }
 
 #header #logo img {
@@ -193,7 +200,6 @@ span {
 #hero {
   width: 100%;
   height: calc(100vh - 40px);
-  background: url(../img/hero-bg.png) center bottom no-repeat;
   background-size: 100%;
   position: relative;
   margin-top: 40px;
@@ -204,6 +210,7 @@ span {
     background-attachment: fixed;
   }
 }
+
 
 #hero .hero-container {
   position: absolute;
@@ -216,15 +223,22 @@ span {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  
+}
+
+@font-face {
+  src:url('/font/featured.ttf');
+  font-family: welcome;
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
+  letter-spacing: 3px;
   line-height: 56px;
-  font-family: "Philosopher", sans-serif;
-  color: #71c55d;
+  font-family: welcome;
+  color: #113086;
 }
 
 @media (max-width: 768px) {
@@ -235,7 +249,7 @@ span {
 }
 
 #hero h2 {
-  color: #777;
+  color: rgb(0, 0, 0);
   margin-bottom: 30px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -268,14 +282,14 @@ span {
   border-radius: 50px;
   transition: 0.5s;
   margin-bottom: 30px;
-  border: 2px solid #71c55d;
+  border: 2px solid #1d53c9;
   background: #fff;
-  color: #71c55d;
+  color: #113086;
   text-decoration: none;
 }
 
 #hero .btn-get-started:hover {
-  background: #71c55d;
+  background: #1183c5;
   color: #fff;
 }
 
@@ -376,9 +390,9 @@ span {
   padding: 8px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #555;
+  color: rgb(0, 0, 0);
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 14px;
   outline: none;
   letter-spacing: 0;
@@ -386,7 +400,7 @@ span {
 }
 
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {
-  color: #71c55d;
+  color: #0c26bb;
 }
 
 .nav-menu > li {
@@ -553,18 +567,17 @@ section {
   }
 }
 
-.section-title {
-  margin-bottom: 80px;
-}
 
-@media (max-width: 992px) {
-  .section-title {
-    margin-bottom: 40px;
-  }
+
+
+
+@font-face {
+  src:url('/font/blog.ttf');
+  font-family: blog;
 }
 
 .section-title h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: blog;
   font-size: 45px;
   font-weight: 100;
   letter-spacing: 2px;
@@ -683,16 +696,16 @@ section {
 }
 
 #get-started .feature-block a {
-  color: #505050;
-  font-size: 12px;
-  font-weight: 600;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
   text-transform: capitalize;
   transition: 0.3s;
 }
 
 #get-started .feature-block a:hover {
-  color: #71c55d;
+  color: #33ff00;
 }
 
 /* About Us Section
@@ -914,7 +927,7 @@ section {
 --------------------------------*/
 #team .team-block {
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
-  height: 254px;
+  height: 264px;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -931,11 +944,11 @@ section {
 }
 
 #team .team-block .team-content {
-  background: #fff none repeat scroll 0 0;
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
   bottom: 0;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
   bottom: -147px;
-  padding: 20px 0;
+  padding: 10px;
   position: absolute;
   width: 100%;
   transition: all 0.5s ease-in-out 0s;
@@ -951,7 +964,7 @@ section {
 }
 
 #team .team-block .team-content ul li a {
-  color: #626262;
+  color: #000000;
 }
 
 #team .team-block .team-content ul li a .fa {
@@ -962,7 +975,7 @@ section {
 }
 
 #team .team-block .team-content ul li a .fa:hover {
-  color: #71c55d;
+  color: #33ff00;
 }
 
 #team .team-block .team-content ul > span {
@@ -1126,6 +1139,16 @@ section {
   }
 }
 
+@font-face {
+  src:url('/font/latest.ttf');
+  font-family: latest;
+
+}
+#blog h2{
+  font-family: latest;
+  text-transform: uppercase;
+  font-size: 36px;
+}
 #blog .block-blog img {
   width: 100%;
 }
@@ -1148,7 +1171,7 @@ section {
 }
 
 #blog .block-blog .content-blog h4 a {
-  color: #555;
+  color: rgb(85, 85, 85);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -1162,20 +1185,14 @@ section {
   font-size: 12px;
 }
 
-#blog .block-blog .content-blog a.readmore {
-  color: #505050;
-  font-size: 12px;
-  font-weight: 600;
+.readmore{
+  color: black;
+}
+
+.readmore:hover{
   text-decoration: none;
-  transition: 0.3s;
-  letter-spacing: 0;
-  text-transform: capitalize;
+  color: green;
 }
-
-#blog .block-blog .content-blog a.readmore:hover {
-  color: #71c55d;
-}
-
 /* Newsletter Section
 --------------------------------*/
 #newsletter {
