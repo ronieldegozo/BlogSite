@@ -1489,3 +1489,19 @@ section {
   letter-spacing: 0;
   color: #71c55d;
 }
+
+
+@font-face {
+  src:url('/font/paragraph.ttf');
+  font-family: contact;
+}
+
+.validate-form .form-group label{
+  color: black;
+  font-weight: bold;
+}
+
+.validate-form .card-header h2{
+  color: rgb(31, 71, 204);
+  font-family:contact ;
+}
