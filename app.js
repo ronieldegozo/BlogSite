@@ -3,11 +3,16 @@ const PORT = process.env.PORT || 3000;
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const passport = require('passport');
+const bodyparser = require('body-parser');
+const morgan = require('morgan');
+
 const {get404} = require('./api/controller/404');
+const blogRoutes = require('./api/routes/blog');
 
 //flash message
 const flash = require('connect-flash');
 const session = require('express-session');
+
 
 const app = express();
 //PASSPORT CONFIG
@@ -29,9 +34,14 @@ mongoose.connect(db, {useNewUrlParser: true, useUnifiedTopology: true})
 app.use(expressLayouts);
 app.set('view engine', 'ejs');
 
+//morgan
+app.use(morgan('dev'));
+
 //bodyparser
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
+app.use(bodyparser.urlencoded({extended: true}));
+app.use(bodyparser.json({}));
 
 //express session
 app.use(session({
@@ -56,6 +66,8 @@ app.use((req,res,next)=>{
 })
 
 
+
+
 //routes
 //users
 app.use('/', require('./api/routes/index'));
@@ -63,6 +75,9 @@ app.use('/users', require('./api/routes/users'));
 
 app.use(require('./api/routes/send'));
 
+
+//posting a new blog
+app.use('/blog', blogRoutes);
 
 //error code
 app.use(get404);
