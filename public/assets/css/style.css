@@ -692,6 +692,7 @@ section {
 }
 
 #get-started .feature-block p {
+
   margin-bottom: 20px;
 }
 
@@ -1504,4 +1505,9 @@ section {
 .validate-form .card-header h2{
   color: rgb(31, 71, 204);
   font-family:contact ;
+}
+
+.padd-section .col-md-6 .feature-block p {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
 }
