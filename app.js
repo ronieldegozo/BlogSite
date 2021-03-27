@@ -7,7 +7,7 @@ const bodyparser = require('body-parser');
 const morgan = require('morgan');
 
 const {get404} = require('./api/controller/404');
-const blogRoutes = require('./api/routes/blog');
+
 
 //flash message
 const flash = require('connect-flash');
@@ -77,7 +77,6 @@ app.use(require('./api/routes/send'));
 
 
 //posting a new blog
-app.use('/blog', blogRoutes);
 
 //error code
 app.use(get404);
