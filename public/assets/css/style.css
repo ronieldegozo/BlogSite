@@ -1511,3 +1511,12 @@ section {
   color: rgb(0, 0, 0);
   font-weight: 600;
 }
+
+.login-wrapper-footer-text{
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.login-wrapper-footer-text a{
+  text-decoration: none;
+}
