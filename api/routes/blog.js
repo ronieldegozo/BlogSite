@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 
 router.get('/', (req,res,next) =>{
 
-
     Blog.find()
 
     .then((result) =>{
@@ -38,7 +37,6 @@ router.get('/', (req,res,next) =>{
     });
 
 })
-
 
 
 router.post('/', (req,res,next) =>{
