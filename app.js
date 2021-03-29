@@ -74,7 +74,7 @@ app.use(require('./api/routes/send'));
 
 
 //posting a new blog
-app.use('/blog', blogRoutes);
+app.use('/blogs', blogRoutes);
 
 //error code
 app.use(get404);
